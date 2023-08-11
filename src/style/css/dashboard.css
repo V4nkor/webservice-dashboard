@@ -1,0 +1,66 @@
+body{
+    padding:20px;   
+}
+
+.statusDiv {
+    position: relative;
+    display: inline-block;
+}
+
+.statusIcon {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin:0px;
+}
+
+.statusDiv .statusIcon {
+    position: absolute;
+    bottom: 0px;
+    right: -25px;
+}
+
+.grayStatus{
+    background-color: gray;
+    border: solid 1px rgb(104, 104, 104);
+}
+
+.redStatus{
+    background-color: red;
+    border: solid 1px rgb(173, 0, 0)
+}
+
+.orangeStatus{
+    background-color: orange;
+    animation: blinkingBackground 0.5s infinite;
+}
+@keyframes blinkingBackground{
+    0%		{ background-color: orange;}
+    25%		{ background-color: rgb(185, 158, 107);}
+    50%		{ background-color: gray;}
+    75%		{ background-color: rgb(185, 158, 107);}
+    100%	{ background-color: orange;}
+}
+
+.greenStatus{
+    background-color: green;
+    border: solid 1px rgb(1, 90, 1);
+}
+
+.pingBtn{
+    margin-left:30px;
+}
+
+.allServicesGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:20px;
+}
+
+.oneService{
+    background-color: rgb(195, 225, 230);
+    padding:20px;
+    border-radius: 5%;
+    margin:20px;
+}
